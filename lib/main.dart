@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_samples/ui/animation_sample_01.dart';
+import 'package:flutter_ui_samples/ui/animation_sample_02.dart';
 import 'package:flutter_ui_samples/ui/counter_page.dart';
 
 void main() => runApp(MyApp());
@@ -40,6 +41,12 @@ class HomePage extends StatelessWidget {
             title: Text('Animation Sample 01'),
             onTap: () {
               Navigator.push(context, AnimationSample01Page.createPageRoute());
+            },
+          ),
+          ListTile(
+            title: Text('Animation Sample 02'),
+            onTap: () {
+              Navigator.push(context, AnimationSample02Page.createPageRoute());
             },
           ),
           ListTile(
